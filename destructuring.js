@@ -19,3 +19,16 @@ function displayPerson({name, age}){
   
 }
 
+// nested
+
+let person = {
+  
+  name: "Cool",
+  address: {
+    city: "LA",
+    state: "NY",
+    zip: "234"
+  }
+}
+
+let {name, address:{city, state, zip}} = person
